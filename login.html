@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+    <title> validation </title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <form id="loginform" action="login.php" method="post" onsubmit="return fvalidate()" name="myform">
+        <div class="align-to-right">
+            <h1> Login </h1>
+                <div class="login">
+                    <input type="text" placeholder="UserName" name="username" id="uname" pattern="[a-zA-Z ]{2,}"><br><br>
+                    <input type="password" placeholder="Password" name="password" id="upass"><br><br>
+                    <center><button name="submit" id="submit" value="submit"> Login </button><br><br></center>
+                    <center>(OR)</center>
+                    <label class="forget"> ForgetPassword? </label><br><br>
+                    <label> Don't have any account . </label>
+                    <a href="signup.html"> Sign Up </a>
+                </div>
+           
+        </div>
+    </form>
+    <script>
+        function fvalidate()
+        {
+            var uname=document.myform.username.value;
+            var upass=document.myform.password.value;
+            if(uname =="" || uname =="null")
+            {
+                alert(" username shouldnot be null");
+                return false;
+            }
+            if(uname.length<6)
+            {
+                alert("username should be more than 6 digits");
+                return false;
+            }
+            if(upass == "" || upass == "null")
+            {
+                alert("password should not be null");
+                return false;
+            }
+            if(upass.length<6)
+            {
+                alert("password should be more than 6 digits");
+                return false;
+            }
+            
+        }
+    </script>
+</body>
+
+</html>

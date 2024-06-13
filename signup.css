@@ -1,0 +1,81 @@
+body{
+
+    margin: 0%;
+    padding: 0%;
+    background-image: url("pictures/vege.jpg");
+    
+    
+}
+h1{
+    
+    text-align: center;
+    color: black;
+}
+.signup{
+
+    width: 400px;
+    margin: auto;
+    padding: 40px;
+    background-color:#8000ff12;
+    
+    border-radius: 50px;
+}
+label{
+
+    color: black;
+    font-size: 17px;
+}
+#uname{
+
+    width: 250px;
+    height: 30px;
+    padding-left: 6px;
+    
+    border-radius: 4px;
+}
+
+#upass{
+
+    width: 250px;
+    height: 30px;
+    padding-left: 6px;
+   
+    border-radius: 7px;
+}
+#uemail{
+
+    width: 250px;
+    height: 30px;
+    padding-left: 6px;
+   
+    border-radius: 7px;
+}
+#uphone{
+
+    width: 250px;
+    height: 30px;
+    padding-left: 6px;
+   
+    border-radius: 7px;
+}
+
+#submit{
+
+    width: 100px;
+    height: 40px;
+    padding-left: 9px;
+    
+    border-radius: 7px;
+    color: black;
+}
+a{
+
+    color: blue;
+    font-size: 17px;
+}
+.align-to-right{
+
+    float: right;
+    padding: 10px;
+    
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> sign up</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+        <link rel="stylesheet" href="signup.css">
+    </head>
+    <body>
+        <form id="signupform" action="submit.php" method="POST" onsubmit="return validateForm()" name="myform">
+        <div class="align-to-right">
+            <h1>Sign up</h1>
+                <div class="signup">
+                
+                    <br>
+                    <label>Name :</label>
+                    <input type="text" id="uname" name="name" required placeholder="NAME" pattern="[a-zA-Z ]{2,}"><br><br>
+                    <label>Email : </label>
+                    <input type="text" id="uemail" name="email" required placeholder="E-MAIL"><br><br>
+                    <label>Password : </label>
+                    <input type="password" id="upass" name="password" required placeholder="PASSWORD"><br><br>
+                    <label>Phone :</label>
+                    <input type="tel" id="uphone" name="phnum" required placeholder="PHONE NUMBER" pattern="[0/+91]?[6-9]{1}[0-9]{9}"><br><br>
+                    <center><button class="btn btn-success" title="sign up" value="submit" name="submit" id="submit"><center> Sign Up </center></button><br><br></center>
+                    <label><center>OR</center></label><br>
+                    <label> Already have an account then
+                        <a class="btn btn-primary" href="login.html" title="login to you account">LOGIN</a>
+                    </label>
+                    
+                </div>
+        </div>
+        </form>
+        <script>
+            function validateForm()
+            {
+                var uname=document.myform.username.value;
+                var upass=document.myform.password.value;
+                var email=document.myform.email.value;
+                var atposition=email.indexOf("@");
+                var dotposition=email.lastIndexOf(".");
+                if(uname =="" || uname =="null")
+                {
+                    alert(" username shouldnot be null");
+                    return false;
+                }
+                if(uname.length<6)
+                {
+                    alert("username should be more than 6 digits");
+                    return false;
+                }
+                if(upass == "" || upass == "null")
+                {
+                    alert("password should not be null");
+                    return false;
+                }
+                if(upass.length<6)
+                {
+                    alert("password should be more than 6 digits");
+                    return false;
+                }
+                
+                {
+                if(atposition<1 || dotposition<atposition+2 || dotposition+2>=email.length)
+                {
+                    alert("please enter valid email");
+                    return false;
+                }
+                }
+            }
+        </script>
+    </body>
+</html>
+               
+                
+                   
+                    
+                
+                    
+                    
+                
+               
+                   
+                
+                
+                    
+           
