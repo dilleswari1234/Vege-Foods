@@ -18,7 +18,6 @@ Vege-Foods/
 ├── signup.html             # Signup page for new users
 ├── css/                    # Contains CSS files for styling
 ├── js/                     # JavaScript files for dynamic content
-├── php/                    # Backend PHP files for handling requests
 └── README.md               # Project documentation
 ```
 
